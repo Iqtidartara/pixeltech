@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins,Comfortaa } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ['800', '700', '600', '500','400', '300'],
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true
+})
+
+
+const comfortaa = Comfortaa({
+  weight: [ '700', '600', '500','400', '300'],
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true
+
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${comfortaa.className} ${poppins.className}`}>{children}</body>
     </html>
   );
 }
