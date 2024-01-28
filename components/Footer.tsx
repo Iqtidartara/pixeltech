@@ -1,4 +1,4 @@
-import { Facebook } from "lucide-react";
+import { Facebook, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -34,14 +34,13 @@ const Footer = () => {
 
         <div className="flex gap-5">
             <Facebook />
-            <Image src="/IMG.png" alt="icon" width={20}  height={20} />
-            <Image src="/IMG.png" alt="icon" width={20}  height={20} />
+            <Twitter />
+         <Youtube/>
         </div>
       </main>
   <div className="flex justify-between items-center max-w-[80rem] mx-auto px-12 py-[30px]">
       <p className="text-[10.495px] text-[#FAFAFA] font-[400] leading-normal">© Copyright by  PixelTect - All right reserved.</p>
-      <p className="text-[10.495px] text-[#FAFAFA] font-[400] leading-normal">© Copyright by  PixelTect - All right reserved.</p>
-      <p className="text-[10.495px] text-[#FAFAFA] font-[400] leading-normal">© Copyright by  PixelTect - All right reserved.</p>
+      <p className="text-[10.495px] text-[#FAFAFA] font-[400] leading-normal">Pixeltect platforms was officially designed by Messum</p>
   </div>
 
     </section>
