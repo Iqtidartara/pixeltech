@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./Style.module.css"
 const AppsWesite = () => {
   const categories = [
     'Websites',
@@ -35,12 +35,12 @@ const AppsWesite = () => {
           Apps, websites, logos & more.
         </h1>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-0 g orderapps md:text-start text-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   g orderapps  md:text-start text-center'>
           {categories.map((category, index) => (
-            <div key={index} className='p-10 '>
-              <span className='border-b-4 border-[#DB00FF] text-[30px] text-[#323232] font-[400] leading-normal text-center'>
+            <div key={index} className='p-9  '>
+              <h1 className=' border-b-4  border-[#DB00FF]  text-start text-[30px] text-[#323232] font-[400] leading-normal pb-3'>
                 {category}
-              </span>
+              </h1>
             </div>
           ))}
         </div>

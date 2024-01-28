@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Poppins,Comfortaa } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
-// const poppins = Poppins({
-//   weight: ['800', '700', '600', '500','400', '300'],
-//   subsets: ['latin'],
-//   display: 'swap',
-//   preload: true
-// })
+const poppins = Poppins({
+  weight: ['800', '700', '600', '500','400', '300'],
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true
+})
 
 
 const comfortaa = Comfortaa({
@@ -30,7 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${comfortaa.className}`}>{children}</body>
+      <body className={`${poppins.className} ${comfortaa.className}`}>
+
+        {children}
+        <Footer />
+      
+      </body>
     </html>
   );
 }

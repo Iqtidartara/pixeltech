@@ -21,7 +21,7 @@ const HomeSection = () => {
       <main className="mx-auto max-w-[80rem] flex flex-col items-center justify-center">
         <h1 className="text-center md:text-[48px] text-[40px]  font-[700] leading-normal">
           <span className="pixel">Pixel</span>
-          <span className="tech">tech</span>
+          <span className="tech">tect</span>
         </h1>
 
         <h6 className="mt-[81.91px] text-[#323232] text-center md:text-[60px] text-[32px] font-[700] md:leading-normal leading-[1.3]">
