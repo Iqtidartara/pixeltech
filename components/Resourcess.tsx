@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Resourcess = () => {
   return (
-    <section className="w-full ">
+    <section className="w-full py-[90px]">
       <main className="mx-auto max-w-[80rem] resosrcolor pt-[60px]">
         {/* heading para and utton */}
         <div className="flex flex-col items-center justify-center">
@@ -34,15 +34,15 @@ const Resourcess = () => {
             />
           </div>
           <div className="md:w-1/2  w-full">
-          <h1 className="text-[#313131] text-[20px] font-[700] leading-[147.9%] ">Say less</h1>
+          <h1 className="text-[#313131] text-[20px] font-[600] leading-[147.9%] ">Say less</h1>
           <p className="text-[#313131] text-[17px] font-[400] leading-[147.9%] mb-[20px] ">Say goodbye to meeting madness. Design requests are our love language.</p>
 
 
-          <h1 className="text-[#313131] text-[20px] font-[700] leading-[147.9%] ">The good kind of board</h1>
+          <h1 className="text-[#313131] text-[20px] font-[600] leading-[147.9%] ">The good kind of board</h1>
           <p className="text-[#313131] text-[17px] font-[400] leading-[147.9%] mb-[20px] ">Manage everything using your Trello board. See what&apos;s on deck, what&apos;s in motion, and what&apos;s ready to launch, all in one glance.</p>
 
 
-          <h1 className="text-[#313131] text-[20px] font-[700] leading-[147.9%] ">It&apos;s a party</h1>
+          <h1 className="text-[#313131] text-[20px] font-[600] leading-[147.9%] ">It&apos;s a party</h1>
           <p className="text-[#313131] text-[17px] font-[400] leading-[147.9%] mb-[20px] ">Invite your entire team to contribute, collaborate, and celebrate design wins.</p>
 
 
