@@ -4,7 +4,7 @@ import PricingCard from './PricingCard';
 const PricingSection = () => {
   return (
     <section className='w-full py-10 md:py-16 lg:py-20 gradient-background'>
-      <main className='max-w-[80rem] mx-auto px-4'>
+      <main className='max-w-[90rem] mx-auto px-4'>
         <h2 className='text-[#323232] text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-normal'>
           Design Tiers
         </h2>

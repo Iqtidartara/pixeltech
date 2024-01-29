@@ -12,22 +12,27 @@ interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({ title, subtitle, price, features, type }) => {
   const cardStyles = {
     standard: 'bg-[#EFEFEF] ', // Standard card background color
-    pro:'gradient text-[#FAFAFA] ',
+    pro: 'gradient text-[#FAFAFA] ',
     // Gradient color for Pro card
     premium: 'bg-[#F5F2F0]', // Premium card background color
   };
 
   const buttonStyles = {
     standard: 'gradient text-white',
-    pro:' bg-[#000] text-[#FAFAFA] ',
-     // Gradient color for Pro button
+    pro: 'bg-[#000] text-[#FAFAFA] ',
+    // Gradient color for Pro button
     premium: 'gradient text-white', // Premium card button color
   };
 
-  
+  const featureImages = {
+    standard: '/darkcheck.png',
+    pro: '/check-circle.png', // Replace with the path to the Pro image
+    premium: '/darkcheck.png', // Replace with the path to the Premium image
+  };
+
   return (
     <div
-      className={`shadow-2xl flex w-full grow flex-col mt-10 mx-auto pt-8 pb-6 px-8 rounded-3xl md:mt-0 ${cardStyles[type]}`}
+      className={`shadow-2xl flex w-full grow flex-col mt-10 mx-auto pt-16 pb-12 px-6 rounded-3xl md:mt-0 ${cardStyles[type]}`}
     >
       <div className='w-full max-w-full mb-5 md:w-[260px] md:mb-0'>
         <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold leading-[131%]'>
@@ -47,13 +52,13 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, subtitle, price, featu
 
         <div className='flex flex-col mt-5'>
           {features.map((feature, index) => (
-            <div key={index} className='flex gap-4 items-start p-2'>
+            <div key={index} className='flex gap-4 items-center p-2'>
               <Image
-                src={`/darkcheck.png`}
+                src={featureImages[type]} // Use the appropriate image based on the card type
                 alt=''
-                className='aspect-[1.14] object-contain object-center w-4 overflow-hidden self-center max-w-full my-auto'
-                width={35}
-                height={35}
+                className='w-fit'
+                width={85}
+                height={85}
               />
               <p className='text-base md:text-lg font-medium leading-[150%]'>{feature}</p>
             </div>
