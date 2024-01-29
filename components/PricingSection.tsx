@@ -8,7 +8,7 @@ const PricingSection = () => {
         <h2 className='text-[#323232] text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-normal'>
           Design Tiers
         </h2>
-        <p className='text-[#323232] text-center text-xl md:text-2xl font-normal leading-normal'>
+        <p className='text-[#323232] text-center text-xl md:text-2xl font-normal leading-normal pt-4'>
           Discover the Pixeltect difference.
         </p>
 

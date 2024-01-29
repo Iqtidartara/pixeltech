@@ -11,7 +11,7 @@ const Resourcess = () => {
           <h1 className="text-[#323232] md:text-[40px] text-[2rem] font-[700] leading-normal md:leading-[1.2] text-center">
             Seamless design. Simplified
           </h1>
-          <p className="md:text-[22px] text-[1rem] text-[#323232] font-[400] md:leading-[113.636%] leading-normal tracking-[0.22px] text-center my-[10px] md:my-[30px]">
+          <p className="md:text-[22px] text-[1rem] text-[#323232] font-[400] md:leading-[113.636%] leading-normal tracking-[0.22px] text-center my-[10px] md:my-[30px] md:px-0 px-4">
             Design shouldn&apos;t be a headache. Pixeltect takes the stress{" "}
             <br className="md:block hidden" /> out of your design journey,
             delivering stunning design <br className="md:block hidden" />{" "}

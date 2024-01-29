@@ -31,7 +31,7 @@ const AppsWesite = () => {
   return (
     <section className='w-full py-[60px]'>
       <main className='mx-auto max-w-[80rem]'>
-        <h1 className='leading-normal text-[50px] text-[#323232] font-[700] text-center py-16'>
+        <h1 className='leading-normal md:text-[50px] text-[2rem] text-[#323232] font-[700] text-center py-16'>
           Apps, websites, logos & more.
         </h1>
 
@@ -39,8 +39,8 @@ const AppsWesite = () => {
           {categories.map((category, index) => (
             <div 
             key={index} className='p-9 '>
-              <h1 className='text-start text-[30px] text-[#323232] font-[400] leading-normal pb-3'>{category}</h1>
-              <div className='w-[350px] h-[4px] bg-gradient-to-br from-[#DB00FF] via-[#DB00FF] to-[#306BFF] '></div>
+              <h1 className='text-start md:text-[30px] text-[1.5rem] text-[#323232] font-[400] leading-normal pb-3'>{category}</h1>
+              <div className='md:w-[350px] w-[250px]  h-[4px] bg-gradient-to-br from-[#DB00FF] via-[#DB00FF] to-[#306BFF] '></div>
             </div>
           ))}
         </div>
