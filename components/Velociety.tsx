@@ -12,7 +12,7 @@ const images = [
   
 ];
 
-const MarqueeImg = () => {
+const Velociety = () => {
   return (
     <section className='w-full py-[99px] flex'>
      
@@ -26,4 +26,4 @@ const MarqueeImg = () => {
   );
 };
 
-export default MarqueeImg;
+export default Velociety;

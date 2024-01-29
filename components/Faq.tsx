@@ -76,13 +76,15 @@ const Faq: React.FC = () => {
     <section className="w-full ">
       {/* Your existing code remains unchanged */}
       <div className="w-full max-w-[70rem] mx-auto px-4 md:py-36 py-1  ">
-      <div className="flex flex-col gap-3 md:mt-[3.94rem] mt-[1.5rem]">
+      <h2 className="md:text-[50px] text-[2rem] text-[#323232] font-[700] leading-normal text-center ">FAQS</h2>
+
+      <div className="flex flex-col gap-3 md:mt-[3.94rem] mt-[.5rem]">
         {faqs.map((faq, index) => (
           <Accordion
             key={`faq-${index}`}
             type="single"
             collapsible
-            className="rounded-md   p-[1.14rem]"
+            className="rounded-md   md:p-[1.14rem] p-3"
           >
             <AccordionItem value={`item-${index}`} className="py-4 px-4">
               <AccordionTrigger className="text-[#323232] leading-[147.9%] text-[20px] font-[700]  ">

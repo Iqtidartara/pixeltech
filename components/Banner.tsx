@@ -8,7 +8,7 @@ const Banner = () => {
 
 <h2 className='text-[#FFF] md:text-[36px] text0-[2rem] font-[700] leading-normal'>Learn more about how Pixeltect works and if it&apos;s right for you.</h2>
 <p className='md:text-[22px] text-[1rem] text-[#F0F0F0] leading-normal font-[400]'>Embark on your design journey with Pixeltect. Discover how to<br className='md:block hidden'/> revolutionize your team&apos;s creative design process, starting now.</p>
-<Button  className='tnsa bg-transparent rounded-full  px-8 py-6 hover:bg-transparent hover:opacity-90 text-[#fff] text-[18px] font-[700] tracking-[-0.029px] leading-[32.79px] '>Get Started</Button>
+<Button  className='tnsa translate-y-0 hover:-translate-y-2 transition delay-100  bg-transparent rounded-full  px-8 py-6 hover:bg-transparent hover:opacity-90 text-[#fff] text-[18px] font-[700] tracking-[-0.029px] leading-[32.79px] '>Get Started</Button>
 
       </main>
     </section>

@@ -30,7 +30,7 @@ const HomeSection = () => {
         <p className="md:text-[24px] text-[1rem] text-[#323232] font-[400] leading-normal text-center my-[30px] ">
           No commitments. Pause or cancel at any time.
         </p>
-        <Button className="btn text-[#FFF] text-[17px] tracking-[0.375px] font-[700] leading-[88.235%] translate-y-0 hover:-translate-y-2 transition delay-100 ">Get started</Button>
+        <Button className="btn  text-[#FFF] text-[17px] tracking-[0.375px] font-[700] leading-[88.235%] translate-y-0 hover:-translate-y-2 transition delay-100 ">Get started</Button>
       </main>
     </section>
   );
