@@ -35,12 +35,12 @@ const AppsWesite = () => {
           Apps, websites, logos & more.
         </h1>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   g orderapps  md:text-start text-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[80rem]   md:text-start text-center gradient-border  border-4 '>
           {categories.map((category, index) => (
-            <div key={index} className='p-9  '>
-              <h1 className=' border-b-4  border-[#DB00FF]  text-start text-[30px] text-[#323232] font-[400] leading-normal pb-3'>
-                {category}
-              </h1>
+            <div 
+            key={index} className='p-9 '>
+              <h1 className='text-start text-[30px] text-[#323232] font-[400] leading-normal pb-3'>{category}</h1>
+              <div className='w-[350px] h-[4px] bg-gradient-to-br from-[#DB00FF] via-[#DB00FF] to-[#306BFF] '></div>
             </div>
           ))}
         </div>
