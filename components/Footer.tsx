@@ -20,30 +20,31 @@ const Footer = () => {
           </div>
           <div className="flex gap-9">
             <div className="">
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Latest projects</h5>
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Pricing</h5>
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Contact</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Latest projects</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Pricing</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Contact</h5>
             </div>
             <div className="">
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Client login</h5>
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Get started</h5>
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Terms & conditions</h5>
-              <h5 className="text-[10.495px] text-[#323232] font-[500] leading-normal">Privacy policy</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Client login</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Get started</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Terms & conditions</h5>
+              <h5 className="text-[15.495px] text-[#323232] font-[500] leading-normal">Privacy policy</h5>
 
             </div>
           </div>
           
         </div>
         <div className="flex gap-5  max-w-[80rem] mx-auto mt-9 mr-12">
-            <Facebook className=" fill-zinc-800"/>
-            <Twitter className=" fill-zinc-800"/>
-         <Youtube className="fill-zinc-800"/>
+        <Image src="/Facebook.png" alt="icon" width={130} height={130} className="w-fit"/>
+        <Image src="/Twitter.png" alt="icon" width={130} height={130} className="w-fit"/>
+        <Image src="/Youtube.png" alt="icon" width={130} height={130} className="w-fit"/>
+            
         </div>
        
       </main>
   <div className="flex justify-between items-center max-w-[80rem] mx-auto px-12 py-[30px]">
-      <p className="text-[10.495px] text-[#FAFAFA] font-[400] leading-normal">© Copyright by  PixelTect - All right reserved.</p>
-      <p className="text-[10.495px] text-[#FAFAFA] font-[400] leading-normal">Pixeltect platforms was officially designed by Messum</p>
+      <p className="text-[15.495px] text-[#FAFAFA] font-[400] leading-normal">© Copyright by  PixelTect - All right reserved.</p>
+      <p className="text-[15.495px] text-[#FAFAFA] font-[400] leading-normal">Pixeltect platforms was officially designed by Messum</p>
   </div>
 
     </section>
