@@ -6,28 +6,34 @@ interface PricingCardProps {
   subtitle: string;
   price: string;
   features: string[];
-  isPro?: boolean; // New prop to identify if it's the Pro card
+  type: 'standard' | 'pro' | 'premium'; // Add a type property
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ title, subtitle, price, features, isPro }) => {
-  const cardStyle = isPro
-    ? {
-        background: 'var(--main, linear-gradient(143deg, #DB00FF -3.42%, #306BFF 97.67%))',
-      }
-    : {};
+const PricingCard: React.FC<PricingCardProps> = ({ title, subtitle, price, features, type }) => {
+  const cardStyles = {
+    standard: 'bg-[#EFEFEF] ', // Standard card background color
+    pro:'gradient text-[#FAFAFA] ',
+    // Gradient color for Pro card
+    premium: 'bg-[#F5F2F0]', // Premium card background color
+  };
 
+  const buttonStyles = {
+    standard: 'gradient text-white',
+    pro:' bg-[#000] text-[#FAFAFA] ',
+     // Gradient color for Pro button
+    premium: 'gradient text-white', // Premium card button color
+  };
+
+  
   return (
     <div
-      className={`shadow-2xl bg-${isPro ? 'gradient-pro' : 'white'} flex w-full ${
-        isPro ? 'scale-150' : 'grow'
-      } flex-col mt-10 mx-auto pt-8 pb-6 px-8 rounded-3xl md:mt-0`}
-      style={cardStyle}
+      className={`shadow-2xl flex w-full grow flex-col mt-10 mx-auto pt-8 pb-6 px-8 rounded-3xl md:mt-0 ${cardStyles[type]}`}
     >
       <div className='w-full max-w-full mb-5 md:w-[260px] md:mb-0'>
-        <h3 className='text-neutral-800 text-2xl md:text-3xl lg:text-4xl font-bold leading-[131%]'>
+        <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold leading-[131%]'>
           {title}
         </h3>
-        <p className='text-slate-600 text-base md:text-lg font-medium leading-[150%] mt-1.5'>
+        <p className='text-base md:text-lg font-medium leading-[150%] mt-1.5'>
           {subtitle}
         </p>
       </div>
@@ -49,22 +55,18 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, subtitle, price, featu
                 width={35}
                 height={35}
               />
-              <p className='text-slate-600 text-base md:text-lg font-medium leading-[150%]'>{feature}</p>
+              <p className='text-base md:text-lg font-medium leading-[150%]'>{feature}</p>
             </div>
           ))}
         </div>
 
         <div className='flex flex-col gap-4 mt-6'>
-          <button
-            className={`bg-${isPro ? '#323232' : '#000'} text-white px-4 py-2 rounded-[37.48px] hover:bg-blue-700`}
-          >
-            {isPro ? 'Upgrade Now' : 'Get Started'}
+          <button className={`px-4 py-2 rounded-[37.48px] hover:bg-[#FAFAFA] hover:text-[#000] ${buttonStyles[type]}`}>
+            {type === 'pro' ? 'Upgrade Now' : 'Get Started'}
           </button>
-          {isPro && (
-            <button className='bg-[#FAFAFA] text-[#323232] px-4 py-2 rounded-[37.48px] hover:bg-gray-100'>
-              Book A Call
-            </button>
-          )}
+          <button className={`px-4 py-2 rounded-[37.48px] hover:bg-[#fafafada] bg-[#FAFAFA] text-[#323232] text-[16px] font-[700] `}>
+            Book A Call
+          </button>
         </div>
       </div>
     </div>
