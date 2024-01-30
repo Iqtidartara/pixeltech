@@ -84,15 +84,14 @@
 
 /* Apply Poppins font to headings */
 
-.fontT{
-font-family: var(--comfortaa-font);
-}
+
 .pixel{
   background: var(--main, linear-gradient(143deg, #DB00FF -3.42%, #306BFF 97.67%));
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-family: var(--poppins-font), serif;
+font-family: var(--comfortaa-font);
+
 }
 
 .tech{
@@ -102,6 +101,7 @@ background-clip: text;
 font-family: var(--poppins-font), serif;
 -webkit-text-fill-color: transparent;
 font-weight: 300;
+font-family: var(--comfortaa-font);
 line-height: normal;
 } 
 .btn{
@@ -204,4 +204,10 @@ border: 3px solid #E5E7EB;
   border-image-slice: 1;
  
 }
-
+.your-element {
+  opacity: 1;
+  transform: translate3d(-231.878px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 1s ease; /* Add a transition for smoother animation */
+}

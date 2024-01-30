@@ -1,19 +1,38 @@
-
+'use client'
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { useFollowPointer } from "./use-follow-pointer";
+
 
 const HomeSection = () => {
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
+
   return (
     <section className="w-full relative overflow-x-clip"
     >
 {/* background color */}
       <div className="absolute -top-80 -left-80 Shadowtopleft  "></div>
       <div className="absolute -top-20 -right-20 shadowtopright "></div>
+      <motion.div
+      ref={ref}
+      className="box"
+      animate={{ x, y }}
+      transition={{
+        type: "spring",
+        damping: 3,
+        stiffness: 50,
+        restDelta: 0.001
+      }}>
       <Image src={"/largestar.png"} alt="star" width={20} height={20} className="absolute left-[394px] top-[59px]  md:block hidden"/>
       <Image src={"/largestar.png"} alt="star" width={12} height={12} className="absolute left-[294px] top-[349px]  md:block hidden"/>
       <Image src={"/largestar.png"} alt="star" width={18} height={18} className="absolute right-[420px] top-[175px]  md:block hidden"/>
+
       <Image src={"/largestar.png"} alt="star" width={36} height={36} className="absolute right-[158px] top-[375px]  md:block hidden "/>
+    </motion.div>
 
 
 

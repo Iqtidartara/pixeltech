@@ -32,9 +32,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, subtitle, price, featu
 
   return (
     <div
-      className={`shadow-2xl flex w-full grow flex-col mt-10 mx-auto pt-16 pb-12 px-6 rounded-3xl md:mt-0 ${cardStyles[type]}`}
+      className={`shadow-2xl flex w-full grow flex-col  mt-10 mx-auto pt-16 pb-12 px-6 rounded-3xl md:mt-0 ${cardStyles[type]}`}
     >
-      <div className='w-full max-w-full mb-5 md:w-[260px] md:mb-0'>
+      <div className='w-full max-w-full mb-5 md:w-[360px]  md:mb-0'>
         <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold leading-[131%]'>
           {title}
         </h3>
