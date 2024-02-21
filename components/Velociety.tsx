@@ -5,11 +5,11 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const images = [
-  '/IMG.png',
-  '/IMG.png',
-  '/IMG.png',
-  '/IMG.png',
-  '/IMG.png',
+  '/i.jpg',
+  '/imgae2.jpg',
+  '/image3.jpg',
+  '/image4.jpg',
+  '/image6.jpg',
 ];
 
 const Velociety = () => {
@@ -34,7 +34,7 @@ const Velociety = () => {
             alt={`pic-${index}`}
             width={1800}
             height={1800}
-            className='w-[50rem] hover:scale-110'
+            className='w-[50rem] hover:scale-110 transition-transform'
           />
         </motion.div>
       ))}

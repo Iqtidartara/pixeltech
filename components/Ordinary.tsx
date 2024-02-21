@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
@@ -39,6 +41,17 @@ const cardsData = [
 
 
 const Ordinary = () => {
+
+  const scrollToSection = (sectionId :any ) => {
+    const targetElement = document.getElementById(sectionId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <section className='w-full bg-[#FAFAFA] py-[60px] relative overflow-x-clip'>
       <main className='mx-auto max-w-[80rem] py-16'>
@@ -54,7 +67,7 @@ const Ordinary = () => {
 <div className='flex flex-col items-center justify-center'>
   <h1 className='text-[#323232] md:text-[50px] text-[2rem] font-[600] md:leading-normal leading-[1.3] text-center fontT'>Beyond ordinary <br/>perks</h1>
   <p className='text-center leading-[104.167%] md:text-[24px] text-[1rem] text-[#323232] py-[25px] fontT'>Everything you need to get everything done.</p>
-  <Button className="btn text-[#FFF] text-[17px] tracking-[0.375px] font-[700] leading-[88.235%] translate-y-0 hover:-translate-y-2 transition delay-100 ">Get started</Button>
+  <Button  onClick={() => scrollToSection('pricing')} className="btn text-[#FFF] text-[17px] tracking-[0.375px] font-[700] leading-[88.235%] translate-y-0 hover:-translate-y-2 transition delay-100 ">Get started</Button>
 </div>
 
  {/* Cards */}
