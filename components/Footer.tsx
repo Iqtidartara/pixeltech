@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className="w-full footer">
       <main className="bg-[#fff] rounded-b-[59px] py-6 md:py-12 lg:py-16">
-        <div className="flex flex-col md:flex-row justify-between max-w-[80rem] mx-auto">
+        <div className="flex flex-col md:flex-row justify-between max-w-[80rem] mx-auto px-4 md:px-12">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-10 mb-6 md:mb-0">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
               <span className="pixel">Pixel</span>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex  md:justify-start justify-center gap-4 md:gap-5 max-w-[80rem] mx-auto mt-6 md:mt-9">
+        <div className="flex md:justify-start justify-center gap-4 md:gap-5 max-w-[80rem] mx-auto mt-6 md:mt-9">
           <Image src="/Facebook.png" alt="icon" width={80} height={80} className="w-fit h-12 md:w-fit md:h-20" />
           <Image src="/Twitter.png" alt="icon" width={80} height={80} className="w-fit h-12 md:w-fit md:h-20" />
           <Image src="/Youtube.png" alt="icon" width={80} height={80} className="w-fit h-12 md:w-fit md:h-20" />
